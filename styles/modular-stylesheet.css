@@ -1,38 +1,38 @@
 /*major semantics*/
 
+html {font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 110%;
+font-weight: 600;
+}
+
 article {float:left;
 width: 30%;
 }
 
 h2 {
-  font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-decoration: none;
   color: #333333;
-  font-size: 110%;
-  font-weight: 600;
+
 }
 
 /*links*/
 
 a:link {
-  font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+ 
   text-decoration: none;
   color: #333333;
-  font-size: 110%;
-  font-weight: 600;
+
 }
 
 a:visited {
     text-decoration: none;
     color: #333333;
-  font-size: 110%;
-    font-weight: 600;
+
 }
 
 a:hover {
   color: black;
   text-decoration: underline;
-  font-size: 110%;
   font-weight: 700;
 }
 
@@ -52,30 +52,48 @@ img {
 
 /*classes - normally these would be dynamic objects lifted from databases, right?*/
 
-.price {font-size:110%;color:black;}
-.brand {font-size:110%;color:black;}
-.model-prefix {font-size:110%;color:black;}
-.model-number {font-size:110%;color:black;}
-.product-category {font-size:110%;color:black;}
-.yes-no-bindings {font-size:110%;color:black;}
-.dash-separator {font-size:110%;color:black;}
-.gender-adult {font-size:110%;color:black;}
-.model-year {font-size:110%;color:black;}
-.product-category-comparison {font-size:110%;color:black;}
+.price {
+    color:black;
+}
+
+.brand {
+    color:black;
+}
+.model-prefix {
+    color:black;
+}
+.model-number {
+    color:black;
+}
+.product-category {
+    color:black;
+}
+.yes-no-bindings {
+    color:black;
+}
+.dash-separator {
+    color:black;
+}
+.gender-adult {
+    color:black;
+}
+.model-year {
+    color:black;
+}
+.product-category-comparison {
+    color:black;
+}
 
 /*button(s)*/
 
 button {
     background: white;
     color: black;
-    font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 110%;
-    height: 3rem;
-    width: 7rem;
-    line-height: 3rem;
+    width: 6rem;
+    line-height: 2rem;
     margin: 1.5rem 1.5rem;
     text-align: center;
-    border: .1rem;
+    border: .15rem;
     border-style: solid;
     border-color: black;
     transition: all 0.2s ease 0s;
@@ -83,5 +101,6 @@ button {
   
 button:hover {
     background: gray;
+    font-weight: 700;
 }
 
