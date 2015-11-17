@@ -1,30 +1,92 @@
 <!DOCTYPE html>
+<!--Just making some notes as a reminder to myself. I recommend skipping it. 
+This assignment is to write modular code, but to really do that, we would need scripting and database experience. REI's site will have many large databases of products, images, categories, prices, and much more, all of which are interlinked and are undergoing constant revision. Trying to apply what I learned from the object-oriented design article, I identified the following objects for each set of skis and tried to arrange them in hierarchical order. There is probably at least one database for each of these objects:
+
+Image
+Rating/review
+Brand
+Model
+Product Category ("skis" in this case, but could be "bicycles" or "parkas")
+Subcategory 0 ("men's" in this case, but could also be childrens. Or could children be a whole other major category, or a subcategory of this subcategory? 
+Subcategory 1 (in this case, "with bindings," but could be, with respect to above, "with fenders" or "waterproof". Could this be a boolean if/then yes/no thingy?
+Subcategory 2 (in this case, "2015/2016" but could be "model generation" or "product rev." more generically.
+Price
+Category comparison (in this case, the "compare" button, which brings up these categories of comparison, somce of which require very special language but which probably use a generic "product additonal description" template somewhere for the "ski" category.
+
+Size
+Reviews
+Best Use
+Ski design
+Ski terrain
+Tip width
+waist width
+tail width
+sidecut radius
+ski camber
+core
+bindings included y/n
+recommended skier weight
+Gender
+Lowest DIN
+highest DIN
+DIN: short for Deutsches Institut für Normung (German Institute for Standardization), is the industry-adopted scale of release force settings for ski bindings. A weird object, because it can't be reused for other products like the "Gender" database.
+
+Anyway, I guess my point is that this page isn't really modular, since it doesn't point to any databases. Everything, from the title to the price, should be drawing on dynamic values coming from databases, so nothing I've made here is really modular.--> 
+
 
 <html>
-<head>
+
+  <head>
   
-  <meta charset="utf-8">
+    <meta charset="utf-8">
       <title>Modular design</title>
         <meta name="description" content="Modular design practice">
-         
-            <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,900%7cRoboto+Slab">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">               
-            <link rel="stylesheet" type="text/css" href="styles/portfolio-stylesheet.css">
+            <link rel="stylesheet" type="text/css" href="styles/modular-stylesheet.css">
+     
+  </head>
+  
+    <body>
+      <article>
     
+        <ul style="list-style-type:none">
+          
+          <li>
+    
+            <a href="http://www.rei.com/product/890679/volkl-rtm-81-skis-with-bindings-mens-20152016">
+            <img src="./images/volki.jpg" alt="Volki Skis Preview Image" height="230" width="230">
+            </a>
+        
+              <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+              </div>
+       
+                <p>
+                  <a href="http://www.rei.com/product/890679/volkl-rtm-81-skis-with-bindings-mens-20152016">
+                    <span class="brand">Volki</span>
+                    <span class="model-prefix">RTM</span>
+                    <span class="model-number">81</span>
+                    <span class="product-category">Skis</span>
+                    <span class="yes-no-bindings">with Bindings</span>
+                    <span class="dash-separator">-</span>
+                    <span class="gender-adult">Men's</span>
+                    <span class="dash-separator">-</span>
+                    <span class="model-year">2015/2016</span>
+            
+                  </a>
+           
+                </p>
+        
+                <p class="price">$899.00</p>
+    
+                <button class="product-category-comparison">Compare</button>
   
+          </li>
   
+        </ul>
   
+      </article>
   
-  
-  
-  
-  
-</head>
+    </body>
 
-
-
-
-
-
-
-</html>
+  </html>
