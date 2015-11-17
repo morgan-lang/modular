@@ -1,38 +1,4 @@
 <!DOCTYPE html>
-<!--Just making some notes as a reminder to myself. I recommend skipping it. 
-This assignment is to write modular code, but to really do that, we would need scripting and database experience. REI's site will have many large databases of products, images, categories, prices, and much more, all of which are interlinked and are undergoing constant revision. Trying to apply what I learned from the object-oriented design article, I identified the following objects for each set of skis and tried to arrange them in hierarchical order. There is probably at least one database for each of these objects:
-
-Image
-Rating/review
-Brand
-Model
-Product Category ("skis" in this case, but could be "bicycles" or "parkas")
-Subcategory 0 ("men's" in this case, but could also be childrens. Or could children be a whole other major category, or a subcategory of this subcategory? 
-Subcategory 1 (in this case, "with bindings," but could be, with respect to above, "with fenders" or "waterproof". Could this be a boolean if/then yes/no thingy?
-Subcategory 2 (in this case, "2015/2016" but could be "model generation" or "product rev." more generically.
-Price
-Category comparison (in this case, the "compare" button, which brings up these categories of comparison, somce of which require very special language but which probably use a generic "product additonal description" template somewhere for the "ski" category.
-
-Size
-Reviews
-Best Use
-Ski design
-Ski terrain
-Tip width
-waist width
-tail width
-sidecut radius
-ski camber
-core
-bindings included y/n
-recommended skier weight
-Gender
-Lowest DIN
-highest DIN
-DIN: short for Deutsches Institut für Normung (German Institute for Standardization), is the industry-adopted scale of release force settings for ski bindings. A weird object, because it can't be reused for other products like the "Gender" database.
-
-Anyway, I guess my point is that this page isn't really modular, since it doesn't point to any databases. Everything, from the title to the price, should be drawing on dynamic values coming from databases, so nothing I've made here is really modular.--> 
-
 
 <html>
 
@@ -90,3 +56,37 @@ Anyway, I guess my point is that this page isn't really modular, since it doesn'
     </body>
 
   </html>
+
+<!--Just making some notes as a reminder to myself. I recommend skipping it. 
+This assignment is to write modular code, but to really do that, we would need scripting and database experience. REI's site will have many large databases of products, images, categories, prices, and much more, all of which are interlinked and are undergoing constant revision. Trying to apply what I learned from the object-oriented design article, I identified the following objects for each set of skis and tried to arrange them in hierarchical order. There is probably at least one database for each of these objects:
+
+Image
+Rating/review
+Brand
+Model
+Product Category ("skis" in this case, but could be "bicycles" or "parkas")
+Subcategory 0 ("men's" in this case, but could also be childrens. Or could children be a whole other major category, or a subcategory of this subcategory? 
+Subcategory 1 (in this case, "with bindings," but could be, with respect to above, "with fenders" or "waterproof". Could this be a boolean if/then yes/no thingy?
+Subcategory 2 (in this case, "2015/2016" but could be "model generation" or "product rev." more generically.
+Price
+Category comparison (in this case, the "compare" button, which brings up these categories of comparison, somce of which require very special language but which probably use a generic "product additonal description" template somewhere for the "ski" category.
+
+Size
+Reviews
+Best Use
+Ski design
+Ski terrain
+Tip width
+waist width
+tail width
+sidecut radius
+ski camber
+core
+bindings included y/n
+recommended skier weight
+Gender
+Lowest DIN
+highest DIN
+DIN: short for Deutsches Institut für Normung (German Institute for Standardization), is the industry-adopted scale of release force settings for ski bindings. A weird object, because it can't be reused for other products like the "Gender" database.
+
+Anyway, I guess my point is that this page isn't really modular, since it doesn't point to any databases. Everything, from the title to the price, should be drawing on dynamic values coming from databases, so nothing I've made here is really modular.--> 
