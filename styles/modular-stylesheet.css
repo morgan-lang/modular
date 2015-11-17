@@ -8,7 +8,8 @@ h2 {
   font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-decoration: none;
   color: #333333;
-  font-weight: 700;
+  font-size: 110%;
+  font-weight: 600;
 }
 
 /*links*/
@@ -17,19 +18,22 @@ a:link {
   font-family: "Interstate Bold Condensed","Helvetica Neue",Helvetica,Arial,sans-serif;
   text-decoration: none;
   color: #333333;
-  font-weight: 700;
+  font-size: 110%;
+  font-weight: 600;
 }
 
 a:visited {
     text-decoration: none;
     color: #333333;
-    font-weight: 700;
+  font-size: 110%;
+    font-weight: 600;
 }
 
 a:hover {
   color: black;
   text-decoration: underline;
-  font-weight: 600;
+  font-size: 110%;
+  font-weight: 700;
 }
 
 /*images*/
