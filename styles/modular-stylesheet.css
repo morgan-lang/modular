@@ -50,7 +50,11 @@ img {
     position: absolute;
 }
 
-/*classes - normally these would be dynamic objects lifted from databases, right?*/
+/*classes - normally these would be dynamic objects lifted from databases, right? I put only the color attribute here because the style doesn't really matter - it's the hypothetical data we're soncerned with*/
+
+.yes-no-sale {
+  color:black;
+}
 
 .price {
     color:black;

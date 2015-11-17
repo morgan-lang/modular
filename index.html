@@ -7,8 +7,8 @@
     <meta charset="utf-8">
       <title>Modular design</title>
         <meta name="description" content="Modular design practice">
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">               
-            <link rel="stylesheet" type="text/css" href="styles/modular-stylesheet.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">               
+          <link rel="stylesheet" type="text/css" href="styles/modular-stylesheet.css">
      
   </head>
   
@@ -30,6 +30,7 @@
        
                 <h2>
                   <a href="http://www.rei.com/product/890679/volkl-rtm-81-skis-with-bindings-mens-20152016">
+                    <span class="yes-no-sale"</span>
                     <span class="brand">Volki</span>
                     <span class="model-prefix">RTM</span>
                     <span class="model-number">81</span>
@@ -59,19 +60,18 @@
   </html>
 
 <!--Just making some notes as a reminder to myself. I recommend skipping it. 
-This assignment is to write modular code, but to really do that, we would need scripting and database experience. REI's site will have many large databases of products, images, categories, prices, and much more, all of which are interlinked and are undergoing constant revision. Trying to apply what I learned from the object-oriented design article, I identified the following objects for each set of skis and tried to arrange them in hierarchical order. There is probably at least one database for each of these objects:
+This assignment is to write modular code, but remember that to really do that, we would need scripting and database experience. REI's site will have many large databases of products, images, categories, prices, and much more, all of which are interlinked and are undergoing constant revision. Trying to apply what I learned from the object-oriented design article, I identified the following objects for each set of skis and tried to arrange them in hierarchical order. There is probably at least one database for each of these objects:
 
 Image
 Rating/review
 Brand
 Model
 Product Category ("skis" in this case, but could be "bicycles" or "parkas")
-Subcategory 0 ("men's" in this case, but could also be childrens. Or could children be a whole other major category, or a subcategory of this subcategory? 
-Subcategory 1 (in this case, "with bindings," but could be, with respect to above, "with fenders" or "waterproof". Could this be a boolean if/then yes/no thingy?
-Subcategory 2 (in this case, "2015/2016" but could be "model generation" or "product rev." more generically.
-Price
+Subcategory 1 ("men's" in this case, but could also be childrens. Or could children be a whole other major category, or a subcategory of this subcategory? 
+Subcategory 2 (in this case, "with bindings," but could be, with respect to above, "with fenders" or "waterproof". Could this be a boolean if/then yes/no thingy?
+Subcategory 3 (in this case, "2015/2016" but could be "model generation" or "product rev." more generically.
+Price with sale boolean or sale as a flag that overrides price
 Category comparison (in this case, the "compare" button, which brings up these categories of comparison, somce of which require very special language but which probably use a generic "product additonal description" template somewhere for the "ski" category.
-
 Size
 Reviews
 Best Use
@@ -90,4 +90,4 @@ Lowest DIN
 highest DIN
 DIN: short for Deutsches Institut für Normung (German Institute for Standardization), is the industry-adopted scale of release force settings for ski bindings. A weird object, because it can't be reused for other products like the "Gender" database.
 
-Anyway, I guess my point is that this page isn't really modular, since it doesn't point to any databases. Everything, from the title to the price, should be drawing on dynamic values coming from databases, so nothing I've made here is really modular.--> 
+Anyway, I guess my point is that this page isn't really modular, since it doesn't point to any databases. All the classes should be drawing on dynamic values coming from databases, so nothing I've made here is really modular.--> 
